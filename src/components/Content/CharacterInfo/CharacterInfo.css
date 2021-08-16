@@ -22,11 +22,16 @@
 
 .characterImg:hover {
 	opacity: 0;
-	transform: translateY(100px);
+	transform: translateY(30px);
 }
 
 .chatacters {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-column-gap: 10px;
+}
+
+.characterInfoOpacity {
+	opacity: 0;
+	transition: 1s;
 }

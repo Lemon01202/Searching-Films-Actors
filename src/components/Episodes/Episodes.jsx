@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getEpisodes } from '../../redux/episodes-reducer'
 import './Episodes.css'
+import GetEpisodes from './GetEpisodes/GetEpisodes'
 const Episodes = () => {
 	const dispatch = useDispatch();
 	useEffect(() => {
@@ -12,17 +13,8 @@ const Episodes = () => {
 	let { currentSeason } = useSelector(state => state.episodes)
 	return (
 		<div className='episodes'>
-			<div className='getEpisodes'>
-				<div className='getEpisodesItem getBreakingBadEpisodes'>
-					<img className='getEpisodesImg' src='https://buckil.com/buckil_image/1546401908breaking_bad.jpg' />
-					<div className='getEpisodesTitle'>Breaking Bad</div>
-				</div>
-
-				<div className='getEpisodesItem getBetterCallSaulEpisodes'>
-					<img className='getEpisodesImg' src='https://ts8.tarafdari.com/contents/user704516/content-image/81hlohhyul._ri_.jpg' />
-					<div className='getEpisodesTitle'>Better Call Saul</div>
-				</div>
-			</div>
+			<div className='episodesTitle'>Choose Series</div>
+			<GetEpisodes />
 			{/* <div className='currentSeason'>{`Season ${currentSeason}`}</div>
 			<div className='episodsList'>
 				{episodesData.map(e => {
