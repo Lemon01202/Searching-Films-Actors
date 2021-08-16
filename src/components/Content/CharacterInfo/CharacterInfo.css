@@ -4,7 +4,7 @@
 	object-fit: cover;
 	border-radius: 10px;
 	position: relative;
-	transition: .8s;
+	transition: 0.8s;
 }
 
 .characterData {
@@ -23,4 +23,10 @@
 .characterImg:hover {
 	opacity: 0;
 	transform: translateY(100px);
+}
+
+.chatacters {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 10px;
 }

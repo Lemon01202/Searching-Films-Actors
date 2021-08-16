@@ -4,8 +4,17 @@ const instance = axios.create({
 	baseURL: 'https://www.breakingbadapi.com/api/'
 })
 
-export const contentAPI = {
-	getCharacters() {
+export const charactersAPI = {
+	getCharacters(limit, offset) {
+		return instance.get(`characters?limit=${limit}&offset=${offset}`);
+	},
+	getCharactersLength() {
 		return instance.get(`characters`);
+	}
+}
+
+export const episodesAPI = {
+	getEpisodes() {
+		return instance.get(`episodes`);
 	}
 }

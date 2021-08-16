@@ -3,7 +3,7 @@ import './Preloader.css';
 const Preloader = () => {
 	return (
 		<div className='preloader'>
-			<img className='prealoaderImage' src='https://i.pinimg.com/originals/3a/ba/b6/3abab6afe878553af574b187e5ef2168.gif' />
+			<img className='prealoaderImage' src='https://gifimage.net/wp-content/uploads/2018/04/loading-animated-gif-transparent-background-4.gif' />
 		</div>
 	)
 }

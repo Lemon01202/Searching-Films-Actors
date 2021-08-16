@@ -1,0 +1,44 @@
+.header {
+	display: flex;
+	margin-bottom: 50px;
+}
+
+.headerLogo {
+	height: 130px;
+	padding: 20px;
+}
+
+.nav {
+	display: flex;
+	margin-left: 50px;
+}
+
+.characterNav,
+.episodesNav {
+	cursor: pointer;
+}
+
+.navItemLink {
+	display: inline-block;
+	font-size: 35px;
+	padding: 20px;
+	border-right: 1px solid rgb(208, 212, 213);
+	margin: 20px;
+	text-decoration: none;
+	color: white;
+}
+.navItemLink:after {
+	display: block;
+	content: "";
+	height: 3px;
+	width: 0%;
+	background-color: #225384;
+	transition: width 0.4s ease-in-out;
+}
+.navItemLink:hover:after,
+.navItemLink:focus:after {
+	width: 100%;
+}
+.navItemLink:active {
+	color: gold;
+}

@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { setSearchingValue } from '../../../redux/content-reducer';
+import { searchCharactersByName, setSearchingValue } from '../../../redux/characters-reducer';
 import './FindCharacter.css'
 const FindCharacter = () => {
 	const dispatch = useDispatch();
-	const { searchingValue } = useSelector(state => state.content);
+	const { searchingValue } = useSelector(state => state.characters);
 	const searchCharacter = (e) => {
 		dispatch(setSearchingValue(e.target.value));
 	}
+	useEffect(() => {
+		dispatch(searchCharactersByName(searchingValue));
+	}, [searchingValue])
 	return (
 		<div className='search'>
 			<form>

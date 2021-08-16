@@ -1,0 +1,40 @@
+.currentSeason {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 70px;
+	color: rgb(199, 255, 30);
+	margin-top: 70px;
+}
+
+.episodsList {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 20px;
+}
+
+.getEpisodes {
+	display: flex;
+	justify-content: space-around;
+}
+
+.getEpisodesItem {
+	background-color: blueviolet;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-around;
+	border-radius: 20px;
+	padding-right: 10px;
+}
+
+.getEpisodesImg {
+	height: 100px;
+}
+
+.getEpisodesTitle {
+	margin: auto auto;
+	padding: 0 50px;
+	font-size: 30px;
+}

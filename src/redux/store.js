@@ -1,9 +1,11 @@
 import { applyMiddleware, combineReducers, createStore } from "redux";
-import contentReducer from "./content-reducer";
+import characters from "./characters-reducer";
 import thunkMiddleware from 'redux-thunk';
 import { composeWithDevTools } from 'redux-devtools-extension';
+import episodes from "./episodes-reducer";
 let reducers = combineReducers({
-	content: contentReducer
+	characters,
+	episodes
 });
 export const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunkMiddleware)));
 window.store = store;

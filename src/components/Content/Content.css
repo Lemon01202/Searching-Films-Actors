@@ -1,6 +1,10 @@
 .content {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-column-gap: 10px;
+	grid-template-rows: 1fr 1fr;
 	text-align: center;
+}
+
+.characterPreloader {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
 }

@@ -1,0 +1,14 @@
+.characterPagination {
+	padding: 70px 0;
+}
+
+.pagesNumber {
+	display: inline;
+	margin-left: 20px;
+	cursor: pointer;
+	font-size: 30px;
+}
+
+.currentPage {
+	color: red;
+}
