@@ -1,0 +1,10 @@
+.episodesItems {
+	border: 1px solid greenyellow;
+	padding: 20px 50px;
+	border-radius: 10px;
+}
+
+.episodesItems .item {
+	text-align: center;
+}
+

@@ -1,24 +1,38 @@
-.currentSeason {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-	font-size: 70px;
-	color: rgb(199, 255, 30);
-	margin-top: 70px;
-}
-
-.episodsList {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
-	grid-gap: 20px;
-}
-
 .episodesTitle {
 	display: flex;
 	justify-content: center;
 	font-size: 40px;
 	margin-bottom: 50px;
+	font-weight: 600;
+
 	background: linear-gradient(90deg, #299642 20%, #0dbc3c 66%, #98d68a);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
+}
+
+.currentSeason {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	font-size: 50px;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	color: #0dbc3c;
+}
+
+.nextSeasonImg {
+	width: 100px;
+}
+
+.prevSeason,
+.nextSeason {
+	margin: 0 30px;
+	cursor: pointer;
+	color: rgb(110, 255, 78);
+}
+
+.prevSeason {
+}
+
+.nextSeason {
 }
